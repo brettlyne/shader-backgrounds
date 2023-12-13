@@ -1,0 +1,32 @@
+.Button {
+  padding: 2px 13px 4px;
+  border-radius: 12px;
+  height: 24px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  &.primary {
+    color: var(--purple);
+    background-color: var(--light-purple);
+    &:hover {
+      background-color: color-mix(in srgb, var(--light-purple) 70%, white);
+    }
+  }
+
+  &.secondary {
+    color: var(--light-purple);
+    background-color: transparent;
+    border-color: color-mix(in srgb, var(--light-purple) 50%, transparent);
+    &:hover {
+      background-color: color-mix(
+        in srgb,
+        var(--light-purple) 10%,
+        transparent
+      );
+    }
+  }
+}
